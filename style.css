@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #EEECEB;
+  display: flex; 
+  flex-direction: column;
+}
+footer{
+  background: #111;
+  width: 100%;
+}
+header {
+  min-height: 10vh;
+  background: linear-gradient(to right, #c7e8e1, #c7e8e1, #fbbfbe); 
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f); */
+
+  background-size: cover;
+  /* background: #fec6c5; */
+  background-position: center;
+}
+article{ 
+  flex: 1; 
+  min-height: 10vh;
+  background-image: url('Image/1\ \(2\).jpg');
+  background-size: cover;
+  background-position: center;
+}
+footer .content{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  margin-bottom: 10px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .content .link-boxes .box{
+  width: 60%;
+  flex-wrap: wrap;
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+  flex-wrap: wrap;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #111;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  .box{
+    width: 80%;
+    margin-top: 10px;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
